@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,500;0,700;1,600&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../CSS/addPost.css" />
+    <title>AddPost</title>
+  </head>
+  <body>
+    <!-- start nav bar -->
+    <nav class="navbar navbar-dark navbar-expand-md fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">TuniSights</a>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navcol-1"
+        >
+          <span class="visually-hidden">Toggle navigation</span
+          ><span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navcol-1" class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="Search.html"
+                ><i class="fas fa-search"></i> Search</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="login.html"> Sign in</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end nav bar -->
+
+    <!-- start add post -->
+    <section class="post">
+      <h1>Add your post</h1>
+      <form id="add-post-form">
+        <div>
+          <label for="title">Give your article an eye-catching title</label>
+          <input type="text" id="title" name="title" required />
+        </div>
+
+        <div>
+          <label for="content">Description</label>
+          <textarea id="content" name="content" required maxlength="300"></textarea>
+          <div id="char-counter">0/300</div>
+        </div>
+
+        <div>
+          <label for="category">Category</label>
+          <select id="category" name="category" required>
+            <option value="">-- Select a category --</option>
+            <option value="Cafe">Cafe</option>
+            <option value="Restaurant">Restaurant</option>
+            <option value="Parc">Parc</option>
+            <option value="Museum">Museum</option>
+            <option value="Monument">Monument</option>
+            <option value="Beach">Beach</option>
+            <option value="Natural Vue">Natural vue</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div>
+          <label for="Place">Place</label>
+          <input type="text" id="Place" name="Place" required />
+        </div>
+        <div>
+          <label for="state">State</label>
+          <select id="state" name="state" required>
+            <option value="" >-- Select a state --</option>
+            <option value="Ariana">Ariana</option>
+            <option value="Beja">Beja</option>
+            <option value="Ben Arous">Ben Arous</option>
+            <option value="Bizerte">Bizerte</option>
+            <option value="Gabes">Gabes</option>
+            <option value="Gafsa">Gafsa</option>
+            <option value="Jendouba">Jendouba</option>
+            <option value="Kairouan">Kairouan</option>
+            <option value="Kasserine">Kasserine</option>
+            <option value="Kebili">Kebili</option>
+            <option value="Kef">Kef</option>
+            <option value="Mahdia">Mahdia</option>
+            <option value="Manouba">Manouba</option>
+            <option value="Medenine">Medenine</option>
+            <option value="Monastir">Monastir</option>
+            <option value="Nabeul">Nabeul</option>
+            <option value="Sfax">Sfax</option>
+            <option value="Sidi Bouzid">Sidi Bouzid</option>
+            <option value="Siliana">Siliana</option>
+            <option value="Sousse">Sousse</option>
+            <option value="Tataouine">Tataouine</option>
+            <option value="Tozeur">Tozeur</option>
+            <option value="Tunis">Tunis</option>
+            <option value="Zaghouan">Zaghouan</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="city">City</label>
+          <input type="text" id="city" name="city" />
+        </div>
+
+        <br />
+        <div id="tags">
+          <label for="post-tags">Tags</label>
+          <input type="text" id="post-tags" name="post-tags" />
+          <button id="add-tag-btn" type="button">Add Tag</button>
+          <div class="tag-container"></div>
+        </div>
+        <div>
+          <label for="image">Image</label>
+          <input type="file" id="image" name="image" required />
+          <img id="imagePreview" style="width: 100px;"/>
+        </div>
+        <br />
+        <div>
+          <label for="location">Location</label>
+          <input type="text" id="location" name="location" required />
+        </div>
+        <br />
+        <div class="rate" id="rating">
+          <p>Rate your trip</p>
+          <input type="radio" id="star1" name="rate" value="1" />
+          <label for="star1" title="text">1 stars</label>
+          <input type="radio" id="star2" name="rate" value="2" />
+          <label for="star2" title="text">2 stars</label>
+          <input type="radio" id="star3" name="rate" value="3" />
+          <label for="star3" title="text">3 stars</label>
+          <input type="radio" id="star4" name="rate" value="4" />
+          <label for="star4" title="text">4 stars</label>
+          <input type="radio" id="star5" name="rate" value="5" />
+          <label for="star5" title="text">5 star</label>
+        </div>
+
+        <div class="form-buttons">
+          <button id="preview-btn" type="button">Preview</button>
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+          <button type="cancel" onclick="window.location.href='Profile.html'">
+            Cancel
+          </button>
+        </div>
+      </form>
+
+      <!-- the preview div -->
+      <div id="preview-modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2 id="preview-title"></h2>
+          <img id="preview-image" />
+          <h4 id="preview-content"></h4>
+          <h6 id="preview-state"></h6>
+          <h6 id="preview-city"></h6> 
+          <h6 id="preview-category"></h6>
+          <h6 id="preview-place"></h6>
+          <h6 id="preview-tags"></h6>
+          <h6 id="preview-location"></h6>
+          <h6 id="preview-rating"></h6>
+        </div>
+      </div>
+    </section>
+    <!-- end add post -->
+
+    <!-- Start Footer -->
+    <div class="footer">
+      <div class="container">
+        <img src="images/logo.png" alt="Logo" />
+        <p class="parag1">
+          Get In Touch With Us <br />
+          We Are waiting For Your Message
+        </p>
+        <div class="Email-link">
+          <a class="btn rounded-pill main-btn w-100" href="#"
+            >TuniSights@gmail.com</a
+          >
+        </div>
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div id="google_translate_element">
+          <p class="copyright">
+            &copy; 2023 <span>TuniSights</span> All Rights Reserved
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- End Footer -->
+    <script src="../JS/bootstrap.min.js"></script>
+    <script src="../JS/addPost.js"></script>
+  </body>
+</html>

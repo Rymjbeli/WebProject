@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdminSettings</title>
+    <link rel="stylesheet" href="{{asset('assets/CSS/AdminSettings.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{asset('assets/CSS/bootstrap.min.css') }}">
+
+</head>
+
+    <body id="body-pd">
+            <!-- nav bar  -->
+            <nav class="navbar navbar-dark navbar-expand-md fixed-top">
+                <div class="container-fluid"><a class="navbar-brand" href="#">TuniSights</a>
+                    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navcol-1">
+                        <span class="visually-hidden">Toggle navigation</span>
+                            <span class="navbar-toggler-icon"></span></button>
+                    <div id="navcol-1" class="collapse navbar-collapse">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link active" href="#">Discover</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="#">About us</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="#"><i class="fas fa-search"></i></a></li>
+                            <li class="nav-item"><a class="nav-link active" href="#">Search</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="#">Sign in</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        <header class="header" id="header">
+            <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
+        </header>
+        <div class="l-navbar" id="nav-bar">
+            <nav class="nav">
+                <div>
+                    <div class="nav_logo">
+                        <i class="fa-solid fa-gear"></i>
+                        <span class="nav_logo-name">Settings</span>
+                    </div>
+
+
+                <div class="nav_list">
+                    <a href="EditProfile.html" class="nav_link active">
+                        <i class="fa-solid fa-user-pen"></i>
+                        <span class="nav_name">Edit Profile</span>
+                    </a>
+                    <a href="#delete-users" class="nav_link">
+                        <i class="fa-solid fa-user-minus"></i>
+                        <span class="nav_name">Delete Users</span>
+                    </a>
+                    <a href="signup.html" class="nav_link">
+                        <i class="fa-solid fa-user-plus"></i>
+                        <span class="nav_name">Add Admin</span> </a>
+                    <a href="#delete-posts" class="nav_link">
+                        <i class="fa-solid fa-trash"></i>
+                        <span class="nav_name">Delete Posts</span>
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <!--Container Main start-->
+        <div class="container" >
+            <div id="delete-users" class="section" >
+                <div class="delete">
+                    <div class="delete-users">
+                        <h1>Delete Users</h1>
+                    </div>
+                    <div class="search-bar">
+                        <input type="text" class="form-control" placeholder="Search...">
+                        <button class="search-button"><i class="fa fa-search"></i>Search</button>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="delete-posts table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th>User ID</th>
+                                <th>Username</th>
+                                <th>Email</th>
+                                <th>Delete</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td >User 1 </td>
+                                <td>user.1@exemple.com</td>
+                                <td>
+                                    <button class="btn btn-danger">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td >User 2 </td>
+                                <td>user.2@exemple.com</td>
+                                <td>
+                                    <button class="btn btn-danger">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td >User 3 </td>
+                                <td>user.3@exemple.com</td>
+                                <td>
+                                    <button class="btn btn-danger">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td >User 4 </td>
+                                <td>user.4@exemple.com</td>
+                                <td>
+                                    <button class="btn btn-danger">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td >User 5 </td>
+                                <td>user.5@exemple.com</td>
+                                <td>
+                                    <button class="btn btn-danger">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td >User 6 </td>
+                                <td>user.6@exemple.com</td>
+                                <td>
+                                    <button class="btn btn-danger">Delete</button>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div id="delete-posts" class="section" style="display: none;" >
+                <div class="delete">
+                    <div class="delete-posts">
+                        <h1>Delete Posts</h1>
+                    </div>
+                    <div class="search-bar">
+                        <input type="text" class="form-control" placeholder="Search...">
+                        <button class="search-button"><i class="fa fa-search"></i>Search</button>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="delete-posts table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th>Post ID</th>
+                                <th>Title</th>
+                                <th>Author</th>
+                                <th>Created at</th>
+                                <th>Delete</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td >Post 1 </td>
+                                <td>Author 1</td>
+                                <td>Created at 1</td>
+                                <td>
+                                    <button class="btn btn-danger">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Post 2</td>
+                                <td>Author 2</td>
+                                <td>Created at 2</td>
+                                <td>
+                                    <button class="btn btn-danger">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Post 3</td>
+                                <td>Author 3</td>
+                                <td>Created at 3</td>
+                                <td>
+                                    <button class="btn btn-danger">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Post 4</td>
+                                <td>Author 4</td>
+                                <td>Created at 4</td>
+                                <td>
+                                    <button class="btn btn-danger">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Post 5</td>
+                                <td>Author 5</td>
+                                <td>Created at 5</td>
+                                <td>
+                                    <button class="btn btn-danger">Delete</button>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Container Main end-->
+            <div class="footer">
+                <div class="container">
+                    <!-- <img src="../Images/logo.png" alt="Logo"/> -->
+                    <p class="parag2">
+                        Get In Touch With Us <br />
+                        We Are waiting For Your Message
+                    </p>
+                    <div class="Email-link">
+                        <a class="btn rounded-pill main-btn w-100" href="#">TuniSights@gmail.com</a>
+                    </div>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <div id="google_translate_element"></div>
+                    <p class="copyright">&copy; 2023 <span>TuniSights</span> All Right Reserved</p>
+                </div>
+            </div>
+        <script src="{{ asset('assets/JS/AdminSettings.js')}}"></script>
+        <script src="{{ asset('assets/JS/bootstrap.min.js')}}"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    </body>
+</html>

@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 20px 0 0 0;
+}
+
+.card {
+    width: 250px;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+.card-img-top {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (min-width: 992px) {
+    .card {
+        margin-bottom: 0;
+    }
+}
+
+footer {
+    text-align: center;
+}
+
+@media screen and (min-width: 992px) {
+    footer .container {
+        max-width: 1200px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    footer .btn {
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+    }
+}

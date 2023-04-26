@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Edit Profile</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/EditProfile.css">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            padding: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- nav bar  -->
+        <nav class="navbar navbar-dark navbar-expand-md fixed-top">
+            <div class="container-fluid"><a class="navbar-brand" href="#">TuniSights</a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navcol-1"><span
+                        class="visually-hidden">Toggle navigation</span><span
+                        class="navbar-toggler-icon"></span></button>
+                <div id="navcol-1" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="#">Discover</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#">About us</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#"><i class="fas fa-search"></i></a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#">Search</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#">Sign in</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <h1 style="text-align: center;">Edit Profile</h1>
+        <form>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" placeholder="Enter username">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter password">
+            </div>
+            <div class="form-group">
+                <label for="bio">Bio</label>
+                <textarea class="form-control" id="bio" rows="3" placeholder="Enter bio"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <select class="form-control" id="gender">
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="birthday">Birthday</label>
+                <input type="date" class="form-control" id="birthday">
+            </div>
+            <div class="form-group">
+                <label for="favorite-places">Tell us about your journey in Tunisia</label>
+                <textarea class="form-control" id="favorite-places" rows="3"
+                    placeholder="What was it like ?"></textarea>
+            </div>
+        </form>
+
+        <form>
+
+            <div class="form-group">
+                <label>What landscape do you prefer ?</label>
+                <div style="display: flex; justify-content: left;">
+                    <div class="answers-container" style="margin-right: 2%;">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="preference" id="beach" value="beach">
+                            <label class="form-check-label" for="beach">
+                                Beach
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="preference" id="forest" value="forest">
+                            <label class="form-check-label" for="forest">
+                                Forest
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <form>
+            <div class="form-group">
+                <label>When traveling, what do you prefer visiting? </label>
+                <div style="display: flex; justify-content: left;">
+                    <div class="answers-container" style="margin-right: 2%;">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="preference" id="hist" value="hist">
+                            <label class="form-check-label" for="beach">
+                                historical landmarks
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="preference" id="modern" value="modern">
+                            <label class="form-check-label" for="forest">
+                                modern attractions
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+
+        <form>
+            <div class="form-group">
+                <label>What would you rather explore? </label>
+                <div style="display: flex; justify-content: left;">
+                    <div class="answers-container" style="margin-right: 2%;">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="preference" id="city" value="city">
+                            <label class="form-check-label" for="beach">
+                                a bustling city
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="preference" id="countryside"
+                                value="countryside">
+                            <label class="form-check-label" for="forest">
+                                a quaint countryside town
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+
+        <form>
+            <div class="form-group">
+                <label>What are you more interested in trying? </label>
+                <div style="display: flex; justify-content: left;">
+                    <div class="answers-container" style="margin-right: 2%;">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="preference" id="streetf" value="streetf">
+                            <label class="form-check-label" for="beach">
+                                local street food
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="preference" id="Uprestaurent"
+                                value="Uprestaurent">
+                            <label class="form-check-label" for="forest">
+                                upscale restaurants
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+
+        <!-- Add a section for the user to add places they have visited -->
+        <div class="form-group">
+            <label for="place">Add a new place:</label>
+
+            <div style="display: flex; justify-content: left;">
+                <input type="text" class="form-control" id="place" placeholder="Enter the name of a place">
+                <button type="button" class="btn btn-primary" id="add-place">Add</button>
+            </div>
+
+            <label for="visited-places" style="margin-top: 2%;">Visited Places:</label>
+            <ul id="visited-places">
+                <!-- List of places the user has visited will be dynamically generated here -->
+            </ul>
+        </div>
+
+        <!-- Add a div for the congratulatory message -->
+        <div class="alert alert-success" role="alert" id="congratulations" style="display:none;">
+            Congratulations! You have added a new place to your visited list.
+        </div>
+
+    </div>
+    </form>
+
+
+
+
+    <script src="../Libs/jquery-3.6.4.min.js"></script>
+    <script src="../JS/EditProfile.js"></script>
+
+
+
+
+
+</body>
+
+</html>

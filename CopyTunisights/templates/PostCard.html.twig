@@ -1,0 +1,42 @@
+
+<script src="../Libs/jquery-3.6.4.min.js"></script>
+<script src="../JS/Profile.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css">
+<div class="container my-5" style="border-color: black">
+  <div class="card mx-auto" style="max-width: 800px;">
+    <div class="row no-gutters">
+      <div class="col-md-8">
+        <img src="https://via.placeholder.com/600x400" class="card-img" alt="...">
+        <p class="fw-bold">$Name</p>
+        <p>$caption</p>
+        <button id = "LikeBtn" class="btn btn-sm btn-square pull-right" style="border-radius: 0;background-image: url('../Images/HeartI.png');background-repeat: no-repeat;background-position: center;background-size: 60%;">
+        </button>
+        <span>0 likes</span>
+      </div>
+      <div class="col-md-4">
+        <div class="card-body d-flex flex-column">
+          <div class="comments mb-4" style="max-height: 400px; overflow-y: auto;">
+            <ul class="list-group list-group-flush" id="CommentSection">
+            </ul>
+          </div>
+          <div class="input-group mt-auto">
+            <input type="text" class="form-control" placeholder="Add a comment..." id="CommentLabel">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .btn-square {
+    border-radius: 0;
+    width: 2.5em;
+    height: 2.5em;
+    padding: 0;
+  }
+  .btn-square .bi {
+    width: 1.5em;
+    height: 1.5em;
+  }
+</style>

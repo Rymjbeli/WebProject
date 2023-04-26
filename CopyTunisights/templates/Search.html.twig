@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/Search.css">
+
+</head>
+
+<body>
+    <header>
+        <!-- nav bar  -->
+        <nav class="navbar navbar-dark navbar-expand-md fixed-top">
+            <div class="container-fluid"><a class="navbar-brand" href="#">TuniSights</a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navcol-1"><span
+                        class="visually-hidden">Toggle navigation</span><span
+                        class="navbar-toggler-icon"></span></button>
+                <div id="navcol-1" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="#">Discover</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#">About us</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#"><i class="fas fa-search"></i></a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#">Search</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#">Sign in</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- search bar -->
+        <h1 id="search">Discover</h1>
+        <div class="search-bar">
+            <input id="search-input" type="text" placeholder="what do you feel like seeing this time ?">
+            <button type="button" onclick="filterAndAddPostesBySearchText()">Search</button>
+        </div>
+    </header>
+    <main>
+
+        <!-- filter -->
+        <div class="filter">
+            <!-- posts number -->
+            <div class="posts-number">
+                <p id="posts-number"></p>
+            </div>
+
+            <!-- filter by state -->
+            <label for="gouvernorat-select">Filter by State</label>
+            <select id="gouvernorat-select">
+                <option value="Tous">All</option>
+                <option value="Ariana">Ariana</option>
+                <option value="Béja">Béja</option>
+                <option value="Ben Arous">Ben Arous</option>
+                <option value="Bizerte">Bizerte</option>
+                <option value="Gabès">Gabès</option>
+                <option value="Jendouba">Jendouba</option>
+                <option value="Kairouan">Kairouan</option>
+                <option value="Kasserine">Kasserine</option>
+                <option value="Kebili">Kebili</option>
+                <option value="Kef">Kef</option>
+                <option value="Mahdia">Mahdia</option>
+                <option value="Manouba">Manouba</option>
+                <option value="Medenine">Medenine</option>
+                <option value="Monastir">Monastir</option>
+                <option value="Nabeul">Nabeul</option>
+                <option value="Sfax">Sfax</option>
+                <option value="Siliana">Siliana</option>
+                <option value="Sidi Bouzid">Sidi Bouzid</option>
+                <option value="Sousse">Sousse</option>
+                <option value="Tataouine">Tataouine</option>
+                <option value="Tozeur">Tozeur</option>
+                <option value="Tunis">Tunis</option>
+                <option value="Zaghouan">Zaghouan</option>
+
+            </select>
+            <button onclick="filterAndAddPostesFromSelect()">Filter</button>
+        </div>
+
+        <!-- results -->
+        <section class="resultats">
+            <div class="postes">
+
+            </div>
+            </div>
+            </div>
+    </main>
+
+    <script src="../JS/Search.js"></script>
+
+    <script src="../Libs/jquery-3.6.4.min.js"></script>
+    <script src="../JS/Profile.js"></script>
+
+</body>
+
+</html>

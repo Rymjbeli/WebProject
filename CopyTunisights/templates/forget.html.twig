@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,500;0,700;1,600&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="../CSS/login.css" />
+    <title>ResetPassword</title>
+  </head>
+  <body>
+
+    <!-- start nav bar -->
+    <nav class="navbar navbar-dark navbar-expand-md fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">TuniSights</a>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navcol-1"
+        >
+          <span class="visually-hidden">Toggle navigation</span
+          ><span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navcol-1" class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="Search.html"
+                ><i class="fas fa-search"></i> Search</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="login.html"> Sign in</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end nav bar -->
+
+    <!-- start form -->
+    <div class="container">
+      <div class="forms">
+        <div class="form">
+          <a href="index.html" class="back">&times;</a>
+          <span class="title">Reset Password</span>
+
+          <form method="post" action="password-reset-code.php">
+            <div class="input-info">
+              <input type="text" placeholder="Enter your email" required />
+              <i class="uil uil-envelope icon"></i>
+            </div>
+            <div class="input-info">
+              <input
+                type="password"
+                class="password"
+                placeholder="New Password"
+                required
+              />
+              <i class="uil uil-lock icon"></i>
+              <span id="show-password">
+                <i class="uil uil-eye-slash showHidePw"></i>
+              </span>
+              <div class="v"></div>
+            </div>
+            <div class="input-info">
+              <input
+                type="password"
+                class="password"
+                placeholder="Confirm Password"
+                required
+              />
+              <i class="uil uil-lock icon"></i>
+              <span id="show-password2">
+                <i class="uil uil-eye-slash showHidePw"></i>
+              </span>
+              <div class="v"></div>
+            </div>
+            <div class="input-info button">
+              <button type="button" id="change">Send Link</button>
+            </div>
+            <div class="login-signup">
+              <a href="login.html" class="text">Return</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="../JS/forgot.js"></script>
+    <script src="../JS/bootstrap.min.js"></script>
+  </body>
+</html>
